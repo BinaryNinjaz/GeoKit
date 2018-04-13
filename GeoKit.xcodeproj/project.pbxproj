@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		16C82F4B20812D300074595C /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C82F4A20812D300074595C /* Point.swift */; };
+		16C82F4D20812DF90074595C /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C82F4C20812DF90074595C /* Edge.swift */; };
+		16C82F4F20812EE40074595C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C82F4E20812EE40074595C /* Helper.swift */; };
+		16C82F5120812F1F0074595C /* Poly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16C82F5020812F1F0074595C /* Poly.swift */; };
 		OBJ_22 /* GeoKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* GeoKit.swift */; };
 		OBJ_29 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_40 /* GeoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* GeoKitTests.swift */; };
@@ -46,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16C82F4A20812D300074595C /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		16C82F4C20812DF90074595C /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		16C82F4E20812EE40074595C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		16C82F5020812F1F0074595C /* Poly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poly.swift; sourceTree = "<group>"; };
 		"GeoKit::GeoKit::Product" /* GeoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GeoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"GeoKit::GeoKitTests::Product" /* GeoKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = GeoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* GeoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoKitTests.swift; sourceTree = "<group>"; };
@@ -123,6 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* GeoKit.swift */,
+				16C82F4E20812EE40074595C /* Helper.swift */,
+				16C82F4A20812D300074595C /* Point.swift */,
+				16C82F4C20812DF90074595C /* Edge.swift */,
+				16C82F5020812F1F0074595C /* Poly.swift */,
 			);
 			name = GeoKit;
 			path = Sources/GeoKit;
@@ -211,7 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				16C82F4D20812DF90074595C /* Edge.swift in Sources */,
+				16C82F5120812F1F0074595C /* Poly.swift in Sources */,
 				OBJ_22 /* GeoKit.swift in Sources */,
+				16C82F4B20812D300074595C /* Point.swift in Sources */,
+				16C82F4F20812EE40074595C /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
