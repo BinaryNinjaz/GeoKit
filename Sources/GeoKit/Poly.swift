@@ -1,13 +1,13 @@
 import Swift
 
-struct Poly<Number: BinaryFloatingPoint> {
-  var edges: [Edge<Number>]
+public struct Poly<Number: BinaryFloatingPoint> {
+  public var edges: [Edge<Number>]
   
-  init(_ coords: Point<Number>...) {
+  public init(_ coords: Point<Number>...) {
     self.edges = createEdges(from: coords)
   }
   
-  init(_ coords: [Point<Number>]) {
+  public init(_ coords: [Point<Number>]) {
     self.edges = createEdges(from: coords)
   }
 }
@@ -64,7 +64,7 @@ extension Poly {
     return result
   }
   
-  func contains(_ p: Point<Number>) -> Bool {
+  public func contains(_ p: Point<Number>) -> Bool {
     let segments = intersectionSegments(onLineXEqual: p.x)
     
     for segment in segments {
@@ -80,7 +80,7 @@ extension Poly {
 }
 
 extension Poly : CustomStringConvertible {
-  var description: String {
+  public var description: String {
     return edges.description
   }
 }
