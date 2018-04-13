@@ -157,4 +157,17 @@ final class GeoKitTests: XCTestCase {
     XCTAssertFalse(s.contains(Point(50, 50)))
     XCTAssertFalse(s.contains(Point(10, 50)))
   }
+  
+  
+  func testEllipseContains() {
+    let major = 10.0
+    let minor = 5.0
+    let c = Point(1, 3)
+    
+    let e = Ellip(center: c, majorAxis: major, minorAxis: minor)
+    
+    XCTAssert(e.contains(Point(2, 4)))
+    XCTAssertFalse(e.contains(Point(2, 7)))
+    
+  }
 }

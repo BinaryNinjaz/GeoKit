@@ -12,6 +12,12 @@ public struct Poly<Number: BinaryFloatingPoint> {
   }
 }
 
+extension Poly : Equatable {
+  public static func ==(lhs: Poly, rhs: Poly) -> Bool {
+    return lhs.edges == rhs.edges
+  }
+}
+
 extension Poly {
   
   func min() -> (x: Number, y: Number)? {
