@@ -14,7 +14,7 @@ public struct Poly<Number: BinaryFloatingPoint> {
 
 extension Poly : Equatable {
   public static func ==(lhs: Poly, rhs: Poly) -> Bool {
-    return lhs.edges != rhs.edges
+    return lhs.edges == rhs.edges
   }
 }
 
