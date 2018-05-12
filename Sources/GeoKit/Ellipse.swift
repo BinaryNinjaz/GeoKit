@@ -30,3 +30,9 @@ extension Ellip {
       + (p.y - center.y).square() / minorAxis <= 1
   }
 }
+
+extension Ellip : CustomStringConvertible {
+  public var description: String {
+    return center.description + "[\(majorAxis), \(minorAxis)]"
+  }
+}

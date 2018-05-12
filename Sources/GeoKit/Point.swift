@@ -17,6 +17,6 @@ extension Point : Equatable {
 
 extension Point : CustomStringConvertible {
   public var description: String {
-    return "(\(x) \(y))"
+    return "(\(x), \(y))"
   }
 }
