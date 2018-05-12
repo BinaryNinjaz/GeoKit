@@ -55,7 +55,7 @@ extension Edge : Equatable {
 
 extension Edge : CustomStringConvertible {
   public var description: String {
-    return "[\(start) \(end)]"
+    return "{\(start) \(end)}"
   }
 }
 
